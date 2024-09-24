@@ -10,11 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <!-- tailwind and daisy ui link  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                       
+                    fontFamily: {
+                        Inter: 'Inter',
+                    },
+                },
+            },
+        }
+    }
+    </script>
 </head>
 <body>
-    <header class="sticky" >
+    <header class="sticky top-0">
             <nav class=" w-full top-0 z-10 class bg-orange-50">
                 <!-- <div class="container mx-auto px-4 py-2 flex items-center"> -->
                   <div class="flex items-center justify-around p-8">
@@ -34,10 +48,68 @@
    
     </header>
     
-    <main>
+    <main class="container w 3/5 mx-auto">
+        <div class="collapse bg-emerald-50 m-6">
+
+            <input type="radio" name="my-accordion-1" checked="checked" />
+
+            <div class="collapse-title text-3xl font-bold"> What is the Document Object Model (DOM)?</div>
+
+            <div class="collapse-content">
+
+              <p class="collapse-title text-2xl  text-slate-400">DOM is a programming interface representing the HTML, XML and other structured documents as a tree of nodes. Some key features of DOM are Tree Structure, node types, Properties and methods, Event handling traversals etc.DOM is commonly used for designing dynamic web pages, web applications and web scraping </p>
+
+            </div>
+
+          </div>
+
+          <!-- <div class="collapse bg-base-200"> -->
+            <div class="collapse bg-emerald-50 m-6">
+
+            <input type="radio" name="my-accordion-1" />
+
+            <div class="collapse-title text-3xl font-bold"> What is event delegation in the context of the DOM, and why is it useful?</div>
+
+            <div class="collapse-content">
+
+              <p class="collapse-title text-2xl  text-slate-400"> Event delegation is a technique using most commonly in the javaScript that levarage the event bubbling  to handle event at a higher level  in the DOM tree rather than directly on the element that triggered the event.These means you can attack a single event listener to a parent element to manage events for multiple child elements, even if those child elements are dynamically later on</p>
+
+            </div>
+
+          </div>
+
+          <!-- <div class="collapse bg-base-200"> -->
+            <div class="collapse bg-emerald-50 m-6">
+
+            <input type="radio" name="my-accordion-1" />
+
+            <div class="collapse-title text-3xl font-bold">How do you manipulate an element's attributes and styles using the DOM?</div>
+
+            <div class="collapse-content">
+
+              <p class="collapse-title text-2xl  text-slate-400">Manipulation an elements attributes and style using the DOM is a fundamental aspect of web development. Methods commonly used are - setting attribute, getting attribute and removing attribute</p>
+
+            </div>
+
+          </div>
+
+          <!-- <div class="collapse bg-base-200"> -->
+            <div class="collapse bg-emerald-50 m-6">
+
+            <input type="radio" name="my-accordion-1" />
+
+            <div class="collapse-title text-3xl font-bold">How do you manipulate an element's attributes and styles using the DOM?</div>
+
+            <div class="collapse-content">
+
+              <p class="collapse-title text-2xl  text-slate-400"> We can manipulate an elements attribute and style using DOM , for this we can use the following styples and attributes , accessing attribute , setting attribute, removing attributes, accessing styles,  setting styles, toggling styles etc. </p>
+
+            </div>
+
+          </div>
 
     </main>
-    <footer class=" w-full h-20 top-0 z-10 class bg-orange-50 mt-4">
+    <footer class=" w-full h-20 top-0 z-10 class bg-orange-50 mt-56">
 
     </footer>
     
