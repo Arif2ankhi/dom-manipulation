@@ -23,7 +23,8 @@
         <nav class=" w-full top-0 z-10 class bg-orange-50">
             <!-- <div class="container mx-auto px-4 py-2 flex items-center"> -->
               <div class="flex items-center justify-around p-8">
-                <button id="blog.btn" class="bg-green-400 text-black font-bold px-4 py-2 rounded-md mr-4">Blog</button>
+                <div><a href="blog.html" class="md:px-4 md:py-2 px-2 py-1 md:text-xl rounded-xl font-bold bg-[#B4F461] text-black border-none">Blog</a></div>
+                <!-- <button id="home-button" class="bg-green-400 text-black font-bold px-4 py-2 rounded-md mr-4">Home</button> -->
                 <div class="flex items-center ">
                     <img src="./Images/logo.png" alt="Donate Bangladesh" class="h-6 w-6 mr-2">
                     <span class="text-black text-3xl font-bold">Donate Bangladesh</span>
@@ -55,7 +56,7 @@
                   <div class="p-10">
                     <div class="flex items-center bg-gray-200 rounded-md border-2 w-9/12 lg:w-3/12  gap-2 p-2">
                         <img src="./Images/coin.png" alt="">
-                        <p id="available-balance-noakhali" class="font-semibold text-xl text-slate-600">0</p>
+                        <p id="available-balance-noakhali" class="font-semibold text-xl text-slate-600">100</p>
                         <p class="font-semibold text-xl text-slate-600">BDT</p>
                     <!-- <span class="text-gray-700 mr-4">0 BDT</span> -->
                     <!-- <p><span>0</span>BDT</p> -->
@@ -142,32 +143,34 @@
 
         <!-- History section -->
           <section id="history-section" class="mt-10 w-4/6 mx-auto hidden">
-            <div id="history" class="felx flex-col gap-5">
+            <div id="history-div" class="felx flex-col gap-5">
 
             </div>
 
           </section>
 
 
-          <!-- Modal -->
-          <dialog id="my-modal" class="modal">
-             <div class="modal-box px-5 py-10 flex flex-col justify-center items-center">
-                <img src="./Images/coin.png" alt="">
-                <p class="py-5">You have donate for humankind</p>
-                <h2 class="font-bold text-2xl text-primary my-5">
-                    Successfully
-                </h2>
-                 
-                <div class=" modal-activation  justify-center text-center">
-                  <form method="dialog">
-                    <button class="btn">Close Confirmation</button>
-                  </form>
-                </div>
-              </div>
-            </dialog>
+          
     </main>
 
     <!-- modal -->
+
+    <!-- Modal -->
+    <dialog id="my-modal" class="modal">
+      <div class="modal-box px-5 py-10 flex flex-col justify-center items-center">
+         <img src="./Images/coin.png" alt="">
+         <p class="py-5">You have donate for humankind</p>
+         <h2 class="font-bold text-2xl text-primary my-5">
+             Successfully
+         </h2>
+          
+         <div class=" modal-activation  justify-center text-center">
+           <form method="dialog">
+             <button class="btn">Close Confirmation</button>
+           </form>
+         </div>
+       </div>
+     </dialog>
 
 
 
@@ -178,6 +181,8 @@
 
 
     <script src="js/indexnk.js"></script>
+    <script src="js/utilities.js"></script>
    
 </body>
 </html>
+
