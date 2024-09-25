@@ -1,11 +1,12 @@
 
-const donationSec =  document.getElementById('donation-sec');
-const historySec = document.getElementById('history-sec');
-
 
 const noakhaliBtn = document.getElementById('noakhali-btn')
 const feniBtn = document.getElementById('feni-btn')
 const quotaBtn = document.getElementById('quota-btn');
+
+
+const donationSec =  document.getElementById('donation-sec');
+const historySec = document.getElementById('history-sec');
 
 
 noakhaliBtn.addEventListener('click',function(){

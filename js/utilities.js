@@ -21,7 +21,7 @@ function calculate(inputAmount,myBalance,locationBalance,id,locationTitle){
     }
 };
 
-// For reload page after modal 
+// For reload page after modal  notification
 // document.getElementById('my_modal').addEventListener('click', function (event){
 //     event.preventDefault();
 //     window.location.reload();
