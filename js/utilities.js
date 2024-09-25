@@ -8,12 +8,11 @@ function getBalance(id){
 
 
 function calculate(inputAmount,myBalance,locationBalance,id,locationTitle){
-    if(inputAmount < 1 || isNaN(inputAmount)){
-        alert('Invalid Donation Amount!')
-    // }else if(myBalance < inputAmount){
+    if(inputAmount <= 0 || isNaN(inputAmount)){
+        alert('Invalid  Amount!')
     }else if( inputAmount > myBalance  ){
         
-        alert("You Don't Have Enough Balance!")
+        alert("You Don't Have Sufficient Balance!")
     }else{
         my_modal.showModal();
         document.getElementById(id).innerText = (locationBalance + inputAmount).toFixed(2);
@@ -21,3 +20,9 @@ function calculate(inputAmount,myBalance,locationBalance,id,locationTitle){
         history(inputAmount,locationTitle);
     }
 };
+
+// For reload page after modal 
+// document.getElementById('my_modal').addEventListener('click', function (event){
+//     event.preventDefault();
+//     window.location.reload();
+// })
